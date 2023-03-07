@@ -1,0 +1,114 @@
+
+
+#container
+{
+	height: 400px;
+	width: 800px;
+	border: 2px solid grey;
+	margin: 40px;
+	background-image: linear-gradient(to top right,rgba(91, 32, 125, 0),rgba(91, 32, 125, 1));
+
+/*	background-image: linear-gradient(to top right,#2857a4,#403066);*/
+}
+
+
+p:active
+{
+	background-color: pink;
+}
+
+a:visited
+{
+	color: green;
+}
+
+a:link  /*unvisited*/
+{
+	color: yellow;
+}
+
+
+
+
+#lightbox {
+	position: fixed;
+	top:0;
+    left:0;
+    width: 0px;
+    height: 0px;
+    transition: 4s;
+    overflow: hidden;   
+}
+
+
+
+#lightbox:target { 						/* target - in internal linking target is internal block */
+	height: 30%;
+    width: 30%;
+    background-color: lightgrey;
+    top:25%;
+    left:25%;
+
+}
+
+.style-first-letter::first-letter
+{
+	text-transform: capitalize;
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+span::before						/*it will add content before the actual content. we can't skip content*/
+{
+	content: "Before-content";
+	font-weight: bold;
+	font-size: 2rem;
+	padding-right: 1rem;
+}
+
+span::after
+{
+	content: "After-content";
+	font-weight: bold;
+	font-size: 2rem;
+	padding-right: 1rem;
+	padding-left: 1rem;
+}
+
+
+
+.img-p::after
+{
+	content: '';
+	width: 20px;
+	height: 20px;
+	display: inline-block;
+	background-image: url("img2.png");
+	background-size: cover;
+
+}
+
+body
+{
+	background-image: url("../images/sowdham.jpg");
+	background-repeat: no-repeat;
+
+}
+
+
+
+
+.test{
+ width: 500px;
+ height: 500px;
+ border: 1px solid grey;
+}
+.div1
+{
+ position: sticky;
+ width: 200px;
+ height: 200px;
+ background-color: red;
+ top: 0px;
+ left: 30px;
+}

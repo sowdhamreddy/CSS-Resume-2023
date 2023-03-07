@@ -1,0 +1,179 @@
+body
+{
+	margin: 0;
+}
+
+/* container */
+
+#container
+{
+	height: auto;
+	width: 75vw;
+	background-color: grey;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+/*	align-items: center;
+	justify-content: center;*/
+
+}
+
+
+
+#container div
+{
+	height: 200px;
+	width: 200px;
+/*		margin: 10px;*/
+
+}
+
+#div1-wrap
+{
+	background-color: red;
+/*	flex-grow: 1;*/
+}
+
+#div2-wrap
+{
+	background-color: blue;
+/*	flex-grow: 1;*/
+}
+
+#div3-wrap
+{
+	background-color: yellow;
+/*		flex-grow: 1;*/
+}
+
+#div4-wrap
+{
+	background-color: green;
+/*		flex-grow: 1;*/
+}
+
+
+#div5-wrap
+{
+	background-color: orange;
+/*		flex-grow: 1;*/
+}
+
+#div6-wrap
+{
+	background-color: purple;
+/*		flex-grow: 1;*/
+}
+
+/*ball container*/
+
+#balls-container
+{
+	width: 60vw;
+	height: 60vh;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	box-shadow: 0px 0px 5px 7px grey;
+	display: flex;
+	flex-direction: column;
+}
+
+#ball-div1
+{
+	order: 0;
+	width: 5%;
+	height: 10%;
+	border-radius: 50%;
+	background-color: pink;
+}
+
+#ball-div2
+{
+	order: 4;
+	width: 10%;
+	height: 15%;
+	border-radius: 50%;
+	background-color: purple;
+}
+
+#ball-div3
+{
+	order: 3;
+	width: 15%;
+	height: 20%;
+	border-radius: 50%;
+	background-color: green;
+}
+
+#ball-div4
+{
+	order: 5;
+	width: 20%;
+	height: 25%;
+	border-radius: 50%;
+	background-color: blueviolet;
+}
+
+#ball-div5
+{
+	order: 1;
+	width: 25%;
+	height: 30%;
+	border-radius: 50%;
+	background-color: yellow;
+}
+
+
+#ball-div6
+{
+	order: 3;
+	width: 30%;
+	height: 35%;
+	border-radius: 50%;
+	background-color: lightgrey;
+}
+
+
+#container2
+{
+	width: 500px;
+	height: 500px;
+	display: flex;
+	background-color: grey;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+
+}
+
+#container2 div
+{
+	width: 100px;
+	height: 100px;
+}
+
+#Div1{
+background-color: red;
+}
+
+#Div2{
+background-color: blue;
+}
+
+#Div3{
+background-color: yellow;
+}
+
+#Div4{
+background-color: brown;
+}
+
+#Div5{
+background-color: orange;
+}
+
+#Div6{
+background-color: purple;
+}
