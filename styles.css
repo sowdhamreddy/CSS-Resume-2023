@@ -1,0 +1,521 @@
+ /*html,body{				 if we wanna use percentage to the height
+	height: 100%;
+}*/
+
+
+body                /* to eliminate the default margin for body */
+{
+	margin: 0px;
+}
+
+/* body header */
+
+#body-header
+{
+/*height: 60%;*/
+ height: 80vh;
+ opacity: 0.8;
+ background-image: url(images/macbook_mouse.jpg);
+ background-size: cover;
+ background-position: center;
+ background-attachment: fixed;
+
+}
+
+
+/* horizontal-list */
+
+.horizontal-list
+{
+	list-style: none; /* to eliminate list style and no need to add if we convert it to inline */ 
+	padding: 0px;
+	margin: 0px;
+}
+
+.horizontal-list li
+{
+	display: inline-block;
+	margin: 0 8px 0 8px;
+	font-size: 20px;
+}
+
+.horizontal-list a 
+{
+ 	color: white;
+ 	text-decoration: none;
+}
+
+.horizontal-list a:hover
+{
+	color: lightgrey;
+	text-decoration: underline;
+	transition: color 0.8s;
+}
+
+/* created class to make text center so that it can be used anywhere */
+
+.text-center
+{
+	text-align: center;
+}
+
+/* name heading */
+
+#header-name
+{
+color: white;
+text-align: center;
+font-family: cursive;
+font-size: 5rem;
+letter-spacing: 0.1rem;
+margin-bottom: 0px;
+}
+
+.horizontal-list a i:hover
+{
+	border-radius: 50%;
+	padding: 10px;
+	box-shadow: 0 0 6px 5px rgba(230, 196, 196, 0.2);
+}
+
+/* about section */
+
+#para
+{
+	 width: 70%;
+/*    text-align: justify;*/
+	color: gray;
+	line-height: 28px;
+    font-size: 1.1rem;
+    margin: auto;
+}
+
+strong
+{
+	color: blueviolet;
+}
+
+#my-img img
+{
+
+	position: relative;
+	top: -80px;
+/*	margin-left: 40%;*/
+	border-radius: 50%;
+	width: 100%;
+	height: 30vh;
+	box-shadow: 0px 0px 10px 6px rgba(212, 209, 210, 0.71);
+
+}
+
+
+section
+{
+	width: 100%;
+/*	height: 75vh;*/
+	display: flex;
+	flex-direction: column;
+    align-items: center;
+}
+
+section:nth-child(2n)  /* even */
+{
+	background-color: #EFF5F5;
+}
+
+section:nth-child(2n+1)  /* odd */
+{
+	background-color: white;
+}
+
+
+/*#skills
+{
+	display: flex;
+	flex-direction: column;v
+}*/
+
+
+.skills-display
+{
+	width: 50vw;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	padding-bottom: 5vw;
+
+}
+
+.skill-progress
+{
+	width: 9rem;
+	height: 1.5rem;
+	background-color: grey;
+	border-radius: 0.8rem;
+	box-shadow: 0 0 0.5rem 0.2rem grey;
+	margin-top: 1.5rem;
+}
+
+/*.skill-progress>div   applies only to direct child within the skill-progress not all divs within skill-progress
+{
+
+
+}*/
+
+
+.skill-name span{
+	color: white;
+	font-size: 1rem;
+	padding: 1.5rem;
+}
+
+.mb-blue
+{
+	background-color: blueviolet;
+}
+
+.mb-orange
+{
+	background-color: orange;
+}
+
+.mb-green
+{
+	background-color: lightseagreen;
+}
+
+.mb-crimson
+{
+	background-color: crimson;
+}
+
+.mb-tomato
+{
+	background-color: tomato;
+}
+
+.mb-mediumvioletred
+{
+	background-color: mediumvioletred;
+}
+
+.mb-darkmagenta
+{
+	background-color: darkmagenta;
+}
+
+.mb75px
+{
+	margin-bottom: 75px;
+}
+
+.section-heading
+{
+/*	width: auto;*/
+	padding: 20px 10px 10px;
+	font-weight: 400;
+	
+
+}
+
+.section-heading span 
+{
+	font-size: 40px;
+	color: #2857a4;
+    padding-top: 10px;
+    margin-right: 0.5rem;
+
+}
+
+
+.ninety-five-percent 
+{
+	width: 85%;
+	height: inherit;
+	border-radius: 0.8rem 0 0 0.8rem;
+}
+
+
+.eight-five-percent
+{
+	width: 85%;
+	height: inherit;
+	border-radius: 0.8rem 0 0 0.8rem;
+}
+
+.seventy-five-percent
+{
+	width: 75%;
+	height: inherit;
+	border-radius: 0.8rem 0 0 0.8rem;
+}
+
+.sixty-five-percent
+{
+	width: 65%;
+	height: inherit;
+	border-radius: 0.8rem 0 0 0.8rem;
+}
+
+.fifty-five-percent
+{
+	width: 55%;
+	height: inherit;
+	border-radius: 0.8rem 0 0 0.8rem;
+}
+
+.sixty-percent
+{
+	width: 60%;
+	height: inherit;
+	border-radius: 0.8rem 0 0 0.8rem;
+}
+
+.thirty-percent
+{
+	width: 30%;
+	height: inherit;
+	border-radius: 0.8rem 0 0 0.8rem;
+}
+
+
+.portfolio-display
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	width: 50vw;
+}
+
+.set-portfolio-size
+{
+	position: relative;
+}
+
+.set-portfolio-size img
+{
+	width: 20rem;
+	height: 15rem;
+}
+
+.set-portfolio-size:hover
+{
+	box-shadow: 0px 0px 0.5rem 0.2rem #A5C9CA;
+	        background-color: #80808078;
+}
+
+.set-portfolio-text
+{
+
+    position: absolute;
+    top: 6rem;
+    left: 5.5rem;
+    color: transparent;
+
+}
+
+.set-portfolio-size:hover .set-portfolio-text
+{
+	width: 12rem;
+	padding: 10px;
+	color: white;
+	font-weight: 800;
+	font-size: 1rem;
+    transition: 1s;
+}
+
+#contact
+{	
+	background-image: linear-gradient(to top right,#2857a4,#403066); 
+	width: 100vw;
+	height: auto;
+	padding: 10px;
+
+}
+
+#contact span
+{
+
+	color: white;
+	font-weight: 100;
+}
+
+.contact-container
+{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: center;
+
+}
+.contact-input
+{
+	width: 35rem;
+	text-align: center;
+
+}
+.contact-address
+{
+	width: 25rem;
+	height: 25rem;
+	color: white;
+	padding-left: 20px;
+	margin-top: 30px;
+
+}
+
+.contact-address i
+{
+	padding-right: 10px;
+	font-size: 12px;
+
+}
+
+
+
+.contact-input .text{
+/*	display: block;*/
+	width: 30rem;
+	margin: 30px;
+	border-style: none;
+	border-bottom:1px solid white;
+	padding: 15px;
+	background-color: transparent;
+	color: white;
+	font-size: 18px;
+
+}
+
+
+.contact-input .submit{
+
+	padding: 10px 30px 10px 30px;
+	background-color: transparent;
+	border-color: white;
+	color: white;
+
+
+}
+
+
+.contact-input .submit:hover{
+	background-color: #3b3974;
+	transition: 1s;
+	border-color: lightsteelblue;
+}
+
+.horizontal ul
+{
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	list-style: none;
+}
+.horizontal ul li i
+{
+	width: 60px;
+	color: white;
+}
+
+
+/*section:target{
+	background-color: cyan;
+}*/
+
+.experience-container
+{
+	position: relative;
+	width: 85%;
+/*
+	 width: 500px;
+ height: 500px;
+ border: 1px solid grey;*/
+ margin:0px 0px 23% 10%;
+}
+
+.experience-boxs
+{
+	position: relative;
+	width: 40%;
+	height: 180px;
+	left:5%;
+	margin: 5px;
+}
+
+.experience-boxs:nth-child(2n+1)
+{
+	left: 53%;
+}
+
+.vertical-border
+{
+	position: absolute;
+	height: 90%;
+	top: 5%;
+	left:50%;
+    border-left-style: dashed;
+    border-width: 3px;
+    border-color: grey;
+}
+
+.flight-icon{
+	 position: sticky;
+	 top: 10%;
+	  width: 8px;
+ 	height: 5px;
+ 	transform: rotate(90deg);
+ }
+
+ .exp-img-logo img{
+ 	width: 80px;
+ 	height: 30px;
+ 	position: absolute;
+ 	padding: 3%;
+ 	top:-10%;
+ 
+ }
+
+.exp-side-heading
+  {
+		position: relative;
+		left: 60%;
+		top: -5px;
+  }
+
+  .exp-side-heading p
+  {
+  	margin-top: -20px;
+  	font-size: 0.8rem;
+  	font-weight: lighter;
+  	color: grey;
+  }
+
+  .exp-side-heading h4
+  {
+  	margin-top: -15px;
+  	color: orange;
+  	font-size: 0.8rem;
+  }
+
+
+
+  .exp-side-heading h2
+  {
+  	color:darkslateblue;
+  	font-size: 1rem;
+  }
+
+  .exp-sub-text p
+  {
+  	padding: 10px;
+  }
+
+
+  .horizontal a i:hover
+{
+	padding: 5px;
+	font-size: 1rem;
+	text-decoration: underline;
+}
