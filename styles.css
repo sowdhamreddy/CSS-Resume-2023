@@ -37,6 +37,7 @@ body                /* to eliminate the default margin for body */
 	display: inline-block;
 	margin: 0 8px 0 8px;
 	font-size: 20px;
+
 }
 
 .horizontal-list a 
@@ -460,10 +461,45 @@ section:nth-child(2n+1)  /* odd */
     border-color: grey;
 }
 
+
+@media screen and (max-width: 800px)
+{
+
+.vertical-border
+{
+	top: 2%;
+	left:5%;
+	height: 95%;
+}
+.experience-boxs:nth-child(2n+1)
+{
+	width: 80%;
+	left: 8%;
+	height: 300px;
+}
+.experience-boxs
+{
+	width: 80%;
+	height: 300px;
+	left: 8%;
+}
+
+html
+{
+	font-size: 15px;
+}
+.horizontal-list
+{
+	display: none;
+}
+
+
+}
+
 .flight-icon{
 	 position: sticky;
 	 top: 10%;
-	  width: 8px;
+	 width: 8px;
  	height: 5px;
  	transform: rotate(90deg);
  }
@@ -473,7 +509,7 @@ section:nth-child(2n+1)  /* odd */
  	height: 30px;
  	position: absolute;
  	padding: 3%;
- 	top:-10%;
+ 	top: -10%;
  
  }
 
